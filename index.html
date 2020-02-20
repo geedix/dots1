@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>network</title>
+    <title>network animation</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
 
@@ -45,9 +45,6 @@
         <g id="Layer_1" data-name="Layer 1">
             
           <g>
-
-
-           
          
             <rect x="0.78" y="136.95" width="1920" height="1080"/>
             <path d="M1919,178V1256H1V178H1919m1-1H0V1257H1920V177Z" transform="translate(0.28 -40.55)"/>
@@ -82,7 +79,7 @@
             <ellipse cx="520" cy="59" rx="9.88636" ry="6.5" fill="gray"/>
             <ellipse cx="558" cy="59" rx="9.88636" ry="6.5" fill="gray"/>
         </g>
-        <text x="20" y="35" fill="white">click anywhere to toggle play/pause</text>
+        <!-- <text x="20" y="35" fill="white">click anywhere to toggle play/pause</text> -->
       </svg>
 
       <script>
@@ -114,7 +111,7 @@
             .to("#p6", {x:Math.random()*1900, y:Math.random()*950, delay:Math.random(), duration:Math.random()*3, ease:"power1.out"}, "pp")
             .to("#p7", {x:Math.random()*1900, y:Math.random()*950, delay:Math.random(), duration:Math.random()*3, ease:"power1.out"}, "pp")
         
-            .to("#p1", {x:1850, y:460, delay:Math.random(), duration:Math.random()*2.5, ease:"power1.out"}, "pq")
+            .to("#p1", {x:1850, y:460, delay:Math.random(), duration:Math.random()*2.5, ease:"power1.inOut"}, "pq")
             .to("#p2", {x:1850, y:460, delay:Math.random(), duration:Math.random()*2.5, ease:"power1.inOut"}, "pq")
             .to("#p3", {x:1850, y:460, delay:Math.random(), duration:Math.random()*2.5, ease:"power1.inOut"}, "pq")
             .to("#p4", {x:1850, y:460, delay:Math.random(), duration:Math.random()*2.5, ease:"power1.inOut"}, "pq")
